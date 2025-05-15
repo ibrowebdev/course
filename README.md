@@ -61,16 +61,18 @@ A full-stack Laravel application with Livewire, Tailwind CSS, REST API, and queu
     php artisan key:generate
     ```
 
-4. Configure DB and mail settings in `.env`
+4. Configure DB  settings in `.env` 
 
 5. Run migrations:
     ```bash
     php artisan migrate
     ```
+    (courselite.sql file in database folder)
 
 6. Start the server:
     ```bash
     php artisan serve
+    npm run dev
     ```
 
 7. Start queue worker:
@@ -82,7 +84,7 @@ A full-stack Laravel application with Livewire, Tailwind CSS, REST API, and queu
 
 ## 🌐 Live Demo
 
-🔗 **App URL**: https://your-live-app-url.com  
+🔗 **App URL**: https://tinyurl.com/courses-apps  
 🔗 **GitHub**: https://github.com/ibrowebdev/course
 
 ---
