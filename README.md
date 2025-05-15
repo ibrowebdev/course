@@ -83,7 +83,7 @@ A full-stack Laravel application with Livewire, Tailwind CSS, REST API, and queu
 ## 🌐 Live Demo
 
 🔗 **App URL**: https://your-live-app-url.com  
-🔗 **GitHub**: https://github.com/your-username/course-enrollment
+🔗 **GitHub**: https://github.com/ibrowebdev/course
 
 ---
 
