@@ -42,6 +42,13 @@ Password: 1234
     php artisan key:generate
     ```
 
+| Email              | Password   |
+|-------------------|------------|
+| testuser1@test.com | password   |
+| testuser2@test.com | password   |
+
+
+
 4. Configure  settings in `.env` (courselite.sql file in database folder)
 
    | Key              | Value   |
