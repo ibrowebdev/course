@@ -43,23 +43,23 @@ Password: 1234
     ```
 
 4. Configure  settings in `.env` (courselite.sql file in database folder)
-   
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=courselite
-DB_USERNAME=root
-DB_PASSWORD=
 
-MAIL_MAILER=smtp
-MAIL_HOST=sandbox.smtp.mailtrap.io
-MAIL_PORT=2525
-MAIL_USERNAME=f4438450ba822b
-MAIL_PASSWORD=d4d5577532e1f9
-MAIL_FROM_ADDRESS="hello@courselite.com"
-MAIL_FROM_NAME="CourseLite Admin"
+   | Key              | Value   |
+|-------------------|------------|
+| DB_CONNECTION | mysql   |
+| DB_HOST | 127.0.0.1   |
+| DB_PORT | 3306   |
+| DB_USERNAME | root   |
+| DB_PASSWORD |    |
 
-QUEUE_CONNECTION=database
+| MAIL_MAILER | smtp   |
+| MAIL_HOST   | sandbox.smtp.mailtrap.io    |
+| MAIL_PORT   | 2525    |
+| MAIL_USERNAME | f4438450ba822b    |
+| MAIL_PASSWORD | d4d5577532e1f9    |
+| MAIL_FROM_ADDRESS | "hello@courselite.com"    |
+| MAIL_FROM_NAME | "CourseLite Admin"    |
+| QUEUE_CONNECTION | database    |
 
 5. Run migrations:
     ```bash
