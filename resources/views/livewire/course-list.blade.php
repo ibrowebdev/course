@@ -60,7 +60,7 @@
                 </tbody>
             </table>
         </div>
-
+            <x-loading />
         <!-- Pagination -->
         <div class="mt-2">
 
