@@ -12,7 +12,7 @@
 </head>
 @livewireStyles
 
-<body x-data="{ show: false }" x-on:open-menu.window="show=true" x-on:close-menu.window="show=false">
+<body>
 
 
 
