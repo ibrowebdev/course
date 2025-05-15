@@ -52,7 +52,6 @@ Password: 1234
 | DB_PORT | 3306   |
 | DB_USERNAME | root   |
 | DB_PASSWORD |    |
-
 | MAIL_MAILER | smtp   |
 | MAIL_HOST   | sandbox.smtp.mailtrap.io    |
 | MAIL_PORT   | 2525    |
