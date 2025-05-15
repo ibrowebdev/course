@@ -1,43 +1,24 @@
-# 📚 Laravel Course Enrollment System
+# Laravel Course Enrollment System
 
-A full-stack Laravel application with Livewire, Tailwind CSS, REST API, and queue processing. Built as part of a technical assessment.
+## 🚀 Live Demo
+🔗 https://tinyurl.com/courses-apps
 
-## 🚀 Features
+## 📦 GitHub Repo
+🔗 https://github.com/ibrowebdev/course
 
-### 🔐 User Authentication
-- Registration and login using Laravel (Livewire stack)
-
-### 🎓 Course Management
-- Livewire-powered course list (paginated)
-- Filter between enrolled/not enrolled
-- Enroll / Cancel enrollment
-- Course detail page with dynamic comment section
-
-### 💬 Comment System
-- Add/Delete comments on enrolled courses
-- Real-time updates with Livewire
-- Comments visible only to enrolled users
-
-### 🧾 REST API (Sanctum Auth)
-- `GET /api/courses` - List user’s enrolled courses
-- `GET /api/courses/{id}` - Course detail with first 5 comments
-- `GET /api/courses/{id}/comments` - List comments
-- `POST /api/courses/{id}/comments` - Add comment
-
-### 📨 Queued Jobs
-- Email notification on enrollment (queued)
-- Comment notification (queued)
+## 👤 Test User Credentials
+Email: oaubot7@gmail.com  
+Password: 1234
 
 ---
 
-## 🛠 Tech Stack
-
-- Laravel 11.x
-- Livewire 3
-- Tailwind CSS
-- Sanctum (API auth)
-- MySQL
-- Laravel Queue with `database` driver
+## 📚 Features
+- User registration/login (Laravel Jetstream + Livewire)
+- Course listing, enrollment, filtering
+- Course detail page with comments (Livewire)
+- REST API with Sanctum token auth
+- Queued email notifications (database queue)
+- Rate-limited API endpoints
 
 ---
 
@@ -61,13 +42,30 @@ A full-stack Laravel application with Livewire, Tailwind CSS, REST API, and queu
     php artisan key:generate
     ```
 
-4. Configure DB  settings in `.env` 
+4. Configure  settings in `.env` (courselite.sql file in database folder)
+   
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=courselite
+DB_USERNAME=root
+DB_PASSWORD=
+
+MAIL_MAILER=smtp
+MAIL_HOST=sandbox.smtp.mailtrap.io
+MAIL_PORT=2525
+MAIL_USERNAME=f4438450ba822b
+MAIL_PASSWORD=d4d5577532e1f9
+MAIL_FROM_ADDRESS="hello@courselite.com"
+MAIL_FROM_NAME="CourseLite Admin"
+
+QUEUE_CONNECTION=database
 
 5. Run migrations:
     ```bash
     php artisan migrate
     ```
-    (courselite.sql file in database folder)
+    
 
 6. Start the server:
     ```bash
@@ -75,30 +73,13 @@ A full-stack Laravel application with Livewire, Tailwind CSS, REST API, and queu
     npm run dev
     ```
 
-7. Start queue worker:
+8. Start queue worker:
     ```bash
     php artisan queue:work
     ```
 
----
-
-## 🌐 Live Demo
-
-🔗 **App URL**: https://tinyurl.com/courses-apps  
-🔗 **GitHub**: https://github.com/ibrowebdev/course
 
 ---
-
-## 👥 Sample User Credentials
-
-| Email              | Password   |
-|-------------------|------------|
-| oaubot7@gmail.com | 1234   |
-
-✅ This user is already enrolled in multiple courses with comments.
-
----
-
 ## 🧪 API Testing
 
 Use tools like Postman:
