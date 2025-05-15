@@ -59,7 +59,7 @@
             </form>
 
         </div>
-
+        <x-loading />
     </div>
 
 
