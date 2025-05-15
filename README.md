@@ -26,8 +26,8 @@ Password: 1234
 
 1. Clone the repo:
     ```bash
-    git clone https://github.com/your-username/course-enrollment.git
-    cd course-enrollment
+    git clone https://github.com/ibrowebdev/course.git
+    cd course
     ```
 
 2. Install dependencies:
