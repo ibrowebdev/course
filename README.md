@@ -107,7 +107,6 @@ Body: { email, password }
 -> Returns: token
 
 Authorization: Bearer {token}
-GET /api/courses
 GET /api/courses - List enrolled courses
 GET /api/courses/{id} - Get specific course details with the first 5 comments
 POST /api/courses/{id}/comments - Post a new comment
