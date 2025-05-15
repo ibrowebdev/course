@@ -13,7 +13,7 @@ Password: 1234
 ---
 
 ## 📚 Features
-- User registration/login (Laravel Jetstream + Livewire)
+- User registration/login (Laravel + Livewire)
 - Course listing, enrollment, filtering
 - Course detail page with comments (Livewire)
 - REST API with Sanctum token auth
