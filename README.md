@@ -51,7 +51,7 @@ Password: 1234
 
 4. Configure  settings in `.env` (courselite.sql file in database folder)
 
-   | Key              | Value   |
+| Key              | Value   |
 |-------------------|------------|
 | DB_CONNECTION | mysql   |
 | DB_HOST | 127.0.0.1   |
